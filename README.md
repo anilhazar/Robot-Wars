@@ -1,6 +1,4 @@
 # Robot-Wars
-Robot Wars, eğlenceli bir robot savaşı simülasyonu olması için yapıldı.
-Bu projeyi yaparken yazılım mühendisliği prensiplerine uyarak temiz, bakımı kolay ve genişletilebilir bir kod yapısı sunmayı hedefledim. 
-Dolayısıyla kodu değiştirmeden, sınıflardan bağımsız istediğiniz kadar robot dahil edebilirsiniz turnuvaya.
+Robot Wars was designed to be a fun robot combat simulation. While working on this project, my goal was to adhere to software engineering principles, providing a clean, maintainable, and extensible code structure. As a result, you can add as many robots to the tournament as you wish without changing the code, as they are independent of the classes.
 
-Projemi incelediğiniz için teşekkürler :^)
+Thank you for reviewing my project! :^)
