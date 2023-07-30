@@ -1,17 +1,24 @@
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
 public class Main {
     public static void main(String[] args) {
-        Robots a = new Robot_A(10, 5);
-        Robots b = new Robot_B(10, 7);
+        RobotA robotA = new RobotA();
+//        double robotAScore = robotA.getScore();
+        RobotB robotB = new RobotB();
+//        double robotBScore = robotB.getScore();
 
-        Robots[] robots = new Robots[]{a, b};
+        Map<Double, String> scoresOfRobots = new HashMap<>();
 
-        ScoreCalculator scoreA = new ScoreCalculator(a, a.getWeight(), a.getRapidity());
-        ScoreCalculator scoreB = new ScoreCalculator(b, b.getWeight(), b.getRapidity());
+        scoresOfRobots.put(robotA.getScore(), robotA.getName());
+        scoresOfRobots.put(robotB.getScore(), robotB.getName());
 
-        WinnerRobot winner = new WinnerRobot(robots);
+        Double maxScore = Collections.max(scoresOfRobots.keySet());
 
-        System.out.println("The Winner is " + winner.getWinner() + " !!!");
+        String robotNameOfWinner = scoresOfRobots.get(maxScore);
 
+        System.out.println("The Winner is " + robotNameOfWinner + " !!!");
 
     }
 }
