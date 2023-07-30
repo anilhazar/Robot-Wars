@@ -1,9 +1,11 @@
-public class ScoreCalculator {
-    Robots robotType;
+ublic final class ScoreCalculator {
 
-    public ScoreCalculator(Robots robotType, int weight, double height ) {
-        this.robotType = robotType;
-        robotType.score = weight * height;
+    private ScoreCalculator() {
+        throw new IllegalStateException("Utility class");
+    }
+
+    public static double calculateScore(int weight, double rapidity) {
+        return weight * rapidity;
     }
 
 }
