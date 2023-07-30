@@ -1,4 +1,4 @@
-ublic final class ScoreCalculator {
+public final class ScoreCalculator {
 
     private ScoreCalculator() {
         throw new IllegalStateException("Utility class");
