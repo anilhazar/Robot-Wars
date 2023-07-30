@@ -1,7 +1,7 @@
 public class WinnerRobot {
    private String winner;
 
-   public WinnerRobot (Robots[] robots){
+   public WinnerRobot (BaseRobot[] robots){
    int indexWinner=0;
        for (int i = 1; i < robots.length ; i++) {
            if(robots[i].score > robots[indexWinner].score )
